@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #3498db;
+  }
+  
+  /* Estilo del header */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+  
+  nav .logo img {
+    max-width: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  nav button {
+    padding: 5px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  nav button:hover {
+    background-color: #2980b9;
+  }
+  
+  nav .social_icon {
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  /* Sección Principal */
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+  }
+  
+  .main_tag {
+    max-width: 600px;
+  }
+  
+  .main_tag h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .main_tag span {
+    font-style: italic;
+  }
+  
+  .main_tag h3 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .main_btn {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .main_btn:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .main_img img {
+    max-width: 450px;
+    border-radius: 10px;
+  }
+  
+  /* Servicios */
+  .services {
+    padding: 40px 20px;
+    background-color: #ecf0f1;
+  }
+  
+  .services_box {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .services_card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .services_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services_card i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #3498db;
+  }
+  
+  .services_card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .services_card p {
+    color: #7f8c8d;
+  }
+  
+  /* Sobre Nosotros */
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 30px;
+  }
+  
+  .about_image img {
+    max-width: 55%;
+    border-radius: 10px;
+  }
+  
+  .about_tag {
+    max-width: 400px;
+  }
+  
+  .about_tag h1 {
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .about_tag h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .about_btn {
+    padding: 10px 30px;
+    background-color: #3498db;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .about_btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Libros destacados */
+  .featured_boks {
+    padding: 80px 20px;
+    background-color: #ecf0f1;
+  }
+  
+  .featured_book_box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .featured_book_card {
+    background-color: #fff;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .featured_book_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .featurde_book_img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .featurde_book_tag {
+    padding: 20px;
+  }
+  
+  .featurde_book_tag h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .featurde_book_tag .f_btn {
+    padding: 10px 25px;
+    background-color: #3498db;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .featurde_book_tag .f_btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Llegadas recientes */
+  .arrivals {
+    padding: 80px 20px;
+  }
+  
+  .arrivals_box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .arrivals_card {
+    background-color: #fff;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .arrivals_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .arrivals_image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .arrivals_tag {
+    padding: 20px;
+  }
+  
+  .arrivals_tag p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .arrivals_icon {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f39c12;
+  }
+  
+  .arrivals_btn {
+    padding: 10px 25px;
+    background-color: #3498db;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .arrivals_btn:hover {
+    background-color: #2980b9;
+
+  }
+  
+  /* Blog */
+  .blog {
+    padding: 80px 20px;
+    background-color: #ecf0f1;
+  }
+  
+  .blog_box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .blog_card {
+    width: 300px;
+    height: 410px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .blog_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog_img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .blog_tag {
+    padding: 10px;
+  }
+  
+  .blog_tag h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog_tag .blog_icon {
+    font-size: 20px;
+    color: #f39c12;
+  }
+  
+  
+  /* Footer */
+  footer {
+    background-color: #4f835b;
+    color: #141313;
+    padding: 40px 20px;
+  }
+  
+  footer .footer_main {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  footer .tag {
+    width: 30%;
+  }
+  
+  footer h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  footer a {
+    display: block;
+    margin-bottom: 10px;
+    color: #f3f0f0;
+  }
+  
+  footer .social_link {
+    display: flex;
+    gap: 15px;
+  }
+  
+  footer .social_link i {
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  footer .social_link i:hover {
+    color: #56cc89;
+  }
+  
+  /* Media Queries para diseño responsivo */
+  @media (max-width: 1200px) {
+    .main {
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+  
+    .main_tag h1 {
+      font-size: 2.5rem;
+    }
+  
+    .services_box {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .services_card {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+  
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about_image img {
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .about_tag h1 {
+      font-size: 2rem;
+    }
+  
+    .featured_book_box {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .featured_book_card {
+      width: 280px;
+    }
+  
+    .arrivals_box {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .arrivals_card {
+      width: 280px;
+    }
+  
+    .blog_box {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .blog_card {
+      width: 280px;
+    }
+  
+    footer .footer_main {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    footer .tag {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main_tag h1 {
+      font-size: 2rem;
+    }
+  
+    .main_tag h3 {
+      font-size: 1rem;
+    }
+  
+    .main_btn {
+      padding: 12px 25px;
+    }
+  
+    .about_tag h1 {
+      font-size: 1.8rem;
+    }
+  
+    .services_card {
+      width: 90%;
+    }
+  
+    .featured_book_card {
+      width: 100%;
+    }
+  
+    .arrivals_card {
+      width: 100%;
+    }
+  
+    .blog_card {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li a {
+      font-size: 14px;
+    }
+  
+    .main_tag h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .main_tag h3 {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  
+    .main_img img {
+      max-width: 100%;
+    }
+  
+    .services_box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services_card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .about {
+      text-align: center;
+    }
+  
+    .about_image img {
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .featured_book_box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .featured_book_card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .arrivals_box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .arrivals_card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .blog_box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .blog_card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
